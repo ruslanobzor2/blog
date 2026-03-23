@@ -6,57 +6,92 @@
     <title>Курсы кредитного аналитика — рейтинг 2026</title>
     <meta name="description" content="Топ-35 программ обучения на кредитного аналитика в 2026 году. Обзор лучших курсов, цен и перспектив профессии.">
     <style>
-       /* Новые стили для красивых блоков-карточек */
-        .criteria-card {
-            background-color: #ffffff;
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            border: 2px solid #edf2f7;
-            display: flex;
-            align-items: flex-start;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .criteria-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-            border-color: #3182ce;
-        }
-        .card-icon {
-            font-size: 2em;
-            margin-right: 20px;
-            line-height: 1;
-            margin-top: 2px;
-        }
-        .card-content {
-            flex: 1;
-        }
-        .card-title {
-            font-weight: 700;
-            color: #1a1a1a;
-            font-size: 1.15em;
-            margin-bottom: 5px;
-            display: inline;
-        }
-        .card-text {
-            color: #4a5568;
-            font-size: 1.1em;
-            display: inline;
-            margin-left: 5px;
-        }
-        /* Иконка кнопки в заголовке */
-        h1::before {
-            content: "📌 ";
-        }
-        /* Тонкая синяя полоска под заголовком */
-        .section-header {
-            border-bottom: 3px solid #3182ce;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-            width: fit-content;
-        }
-    </style>
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #f8fafc;
+        color: #1e293b;
+        line-height: 1.6;
+        padding: 40px 20px;
+    }
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 50px;
+        border-radius: 24px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+    }
+    .section-header h1 {
+        font-size: 2.5rem;
+        color: #0f172a;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    /* Основной стиль карточки */
+    .criteria-card {
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 30px;
+        margin-bottom: 25px;
+        border: 1px solid #e2e8f0;
+        display: flex;
+        gap: 25px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    .criteria-card:hover {
+        transform: scale(1.01);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    }
+
+    /* Инициатива: разные полоски по бокам для каждого блока */
+    .criteria-card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 6px;
+    }
+
+    /* Цветовые вариации */
+    .card-blue::before { background: #3b82f6; }
+    .card-red::before { background: #ef4444; }
+    .card-green::before { background: #10b981; }
+    .card-orange::before { background: #f59e0b; }
+    .card-purple::before { background: #8b5cf6; }
+
+    .card-icon {
+        font-size: 2.5rem;
+        min-width: 60px;
+        height: 60px;
+        background: #f1f5f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+    }
+
+    .card-content h2 {
+        margin: 0 0 12px 0;
+        font-size: 1.4rem;
+        color: #0f172a;
+    }
+
+    .card-content p {
+        margin: 0 0 15px 0;
+        color: #475569;
+        font-size: 1.05rem;
+    }
+
+    .card-content p:last-child { margin-bottom: 0; 
+    }
+</style>
+
 </head>
 <body>
     <div class="container">
@@ -258,12 +293,13 @@
   
 <p>Эти программы полезны как дополнение к базовой подготовке для углубления в конкретную область, но не дают комплексных навыков кредитного аналитика.</p>
 
-<div class="section-header">
-            <h1>Критерии выбора программы обучения</h1>
-        </div>
-<div class="criteria-card">
-    <div class="card-icon">⚖️</div>
-    <div class="card-content">
+<div class="container">
+    <div class="section-header">
+        <h1>📌 Критерии выбора программы обучения</h1>
+    </div>
+<div class="criteria-card card-blue">
+        <div class="card-icon">⚖️</div>
+        <div class="card-content">
 <h2>Баланс методологии и практики</h2>
 
 <p>Эффективная программа сочетает методологическую базу с практическими навыками. Избыточно теоретические курсы дают понимание концепций, но не учат применять их к реальным кредитным заявкам. Избыточно практические программы формируют навыки работы по шаблону, но не развивают способность адаптироваться к нестандартным ситуациям.</p>
@@ -272,53 +308,51 @@
 </div>
 </div>
         
-<div class="card">
-     </div>
-<div class="criteria-card">
-    <div class="card-icon">⚖️</div>
-    <div class="card-content">
+<div class="criteria-card card-red">
+        <div class="card-icon">🏛️</div>
+        <div class="card-content">
 <h2>Актуальность для текущих регуляторных требований</h2>
 
 <p>Банковское регулирование эволюционирует — Банк России регулярно меняет требования к резервированию, методологию надзора, стандарты раскрытия информации. Программа обучения должна отражать текущие требования, а не те, что действовали пять лет назад.</p>
  
 <p>Особенно это критично для тем, связанных с формированием резервов, оценкой обеспечения, стресс-тестированием. Устаревшая методология может привести к неправильному резервированию и проблемам при проверках регулятора.</p>
+</div>
+    </div>
 
-<div class="card">
-<h2>География и формат обучения</h2>
- </div>
-<div class="criteria-card">
-    <div class="card-icon">⚖️</div>
-    <div class="card-content">
+<div class="criteria-card card-green">
+        <div class="card-icon">🌐</div>
+        <div class="card-content"><h2>География и формат обучения</h2>
+
 <p>Территориальная концентрация качественного обучения в Москве создаёт барьер для специалистов из регионов. Банки работают по всей стране, но доступ к профессиональному образованию неравномерен.</p>
  
 <p>Онлайн-формат решает географическую проблему, но требует самодисциплины. Для формирования практических навыков важна не только теория, но и работа с кейсами, обратная связь от экспертов. Качественные дистанционные программы должны включать живые разборы кейсов, а не только записанные лекции.</p>
 </div>
 </div>
         
-<div class="card">
+<div class="criteria-card card-orange">
+        <div class="card-icon">💰</div>
+        <div class="card-content">
 <h2>Стоимость и окупаемость</h2>
- </div>
-<div class="criteria-card">
-    <div class="card-icon">⚖️</div>
-    <div class="card-content">
+ 
 <p>Инвестиция в обучение должна соотноситься с карьерным результатом. Программа за 700,000-800,000 рублей оправдана, если приводит к позиции кредитного аналитика с зарплатой 150,000-200,000 рублей — окупается за несколько месяцев работы. Курс за 100,000 рублей окупается при росте дохода на 20,000-30,000 в месяц.</p>
  
 <p>Важно учитывать не только прямые расходы, но и альтернативную стоимость времени. Два года очной магистратуры без работы — это потеря 2-3 миллионов рублей дохода для специалиста среднего уровня. Онлайн-программа на 6-9 месяцев при совмещении с работой не имеет этой альтернативной стоимости.</p>
 </div>
 </div>
         
-<div class="card">
+<div class="criteria-card card-purple">
+        <div class="card-icon">🚀</div>
+        <div class="card-content">
 <h2>Карьерные перспективы кредитного аналитика</h2>
- </div>
-<div class="criteria-card">
-    <div class="card-icon">⚖️</div>
-    <div class="card-content">
+ 
+
 <p>Рынок труда для кредитных аналитиков стабилен — банки всех размеров нуждаются в специалистах для оценки заёмщиков. Junior позиции предлагают 80,000-120,000 рублей в регионах и 100,000-150,000 в Москве. Middle уровень — 150,000-250,000, senior и руководители — 250,000-500,000 и выше.</p>
  
 <p>Путь от junior до middle занимает обычно 3-4 года практики. За это время вы набираете опыт анализа различных типов заёмщиков, учитесь распознавать риски, осваиваете специфику отрасли или сегмента кредитования. Качественное обучение сокращает время освоения до первой позиции, но не заменяет практический опыт.</p>
 
 <p>Профессия кредитного аналитика даёт платформу для карьерного роста в нескольких направлениях: управление кредитными рисками, руководство кредитным департаментом, переход в смежные области риск-менеджмента, работа в регуляторе или консалтинге. Инвестиция в качественное обучение — это фундамент для долгосрочного карьерного развития в финансовой индустрии.</p>
- </div>
+</div>
+    </div>
 </div>
   
 </body>
